@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"  href="/asset/style.css">
+</head>
+<body>
+	<% include templates/menu.ejs %>
+	<h1>This is addCat </h1>
+	<form action="/addCat" method="post">
+		<table> 
+			<tr> 
+				<td> 
+					Name 
+				</td>
+				
+				<td> 
+					<input type="text" value="<%=que.name%>" name="name" /> 
+				</td>
+			</tr>
+			
+			<tr> 
+				<td> 
+					 
+				</td>
+				
+				<td> 
+					<input type="submit" value="Thêm" name="them" /> 
+				</td>
+			</tr>
+		</table>	
+	</form>
+	</div>
+</body>
+</html>

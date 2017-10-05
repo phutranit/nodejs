@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"  href="/asset/style.css">
+</head>
+<body>
+	<% include templates/menu.ejs %>
+	<h1>This is success </h1>
+	<h4>Congratulations Add succsess!</h4>
+	<form action="/addCat" method="post">
+		<table> 
+			<tr> 
+				<td> 
+					Name 
+				</td>
+				
+				<td> 
+					<%=body.name%>
+				</td>
+			</tr>
+			
+		</table>	
+	</form>
+	</div>
+</body>
+</html>
