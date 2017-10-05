@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"  href="/asset/style.css">
+</head>
+<body>
+	<% include templates/menu.ejs %>
+	<h1>This is profile </h1>
+	<p>Name : <%=name%><p>
+	<div>
+			<p>Age : <%=objPro.age%></p>
+			<p>Class : <%=objPro.cl%> </p>
+
+			<ul>
+					<%
+						langlike.forEach(function(value,key){
+					%>
+					<li><%=value%> -- <%=key%> </li>
+					<%
+						});
+					%>
+			</ul>
+	</div>
+</body>
+</html>
